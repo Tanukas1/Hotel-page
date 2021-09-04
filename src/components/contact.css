@@ -1,0 +1,105 @@
+.contact{
+    background-color: #eeeded;
+}
+.heading{
+    text-align: center;
+    padding: 70px;
+}
+.head {
+    font-family: 'Playfair Display', serif;
+     font-size: 40px;
+     font-weight: bold;
+   }
+
+   .head::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #c5953c;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.head:hover::after{
+    width: 25%;
+}   
+   
+.box-container{
+    display: flex;
+    padding: 0px 60px;
+    flex-wrap: wrap;
+   /* padding-left: 440px;*/
+}
+.about .box-container .box{
+    background-color: white;
+    flex:1 1 20rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    padding: 15px;
+  }
+ p{
+font-size: 16px;
+font-weight: 600;
+padding: 10px;
+font-family: 'Lato', sans-serif;
+  }
+  .left{
+    flex-direction: column;
+    display: flex;
+margin-left: 540px;
+}
+.enter{
+    background-color: #eeeded;
+        height: 35px;
+        color: black;
+        font-weight: 80px;
+        width: 35%;
+        outline: none;
+        font-size: 15px;
+        border-radius: 3px;
+        padding-left: 15px;
+        border: none;
+        border-bottom: 2px solid black;
+        transition: all 0.3s ease;
+      }
+      .message{
+          margin-left: 21px;
+      }
+    .ent{
+          background-color: rgba(27, 26, 26, 0.075);
+          width: 22%;
+          margin-top: 20px;
+          padding: 10px;
+          border: none;
+        }
+        .button{
+            margin-left: -120px;
+            margin-top: 5px;
+        }
+    .form-btn{
+       width: 10%;
+       border-radius: 2px;
+        background-color: black;
+        color: white;
+    }
+   
+form{
+    margin-top: -70px;
+    margin-bottom: 10px;
+}
+    @media(width:500px){
+     .enter{
+         margin-left: -400px;
+         width: 210px;
+     } 
+     .ent{
+         width:220px;
+     }
+     .message{
+         margin-left: 8px;
+     }
+     .button{
+         width: 900px;
+         margin-left: -200px;
+     }
+    }
